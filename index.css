@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;  
+  /*
   transition: 0.25s cubic-bezier(0.2, 0.6, 0.07, 1);
+  */
+  transition: background-color var(--transition), color var(--transition);
   color: var(--colorDarkest);
   /*
   font-size: var(--fontSizeBody);
@@ -56,11 +59,14 @@
   --shadowS: 0 4px 4px -2px hsla(var(--colorHue), 100%, 1%, 0.22);
   --shadowM: 0 6px 8px 0px hsla(var(--colorHue), 100%, 1%, 0.22);
   --shadowL: 0 8px 10px 2px hsla(var(--colorHue), 100%, 1%, 0.22);
+
+  --transition: 0.25s cubic-bezier(0.2, 0.6, 0.07, 1);
 }
 
 @font-face {
   font-family: Inter;
   src: url('inter.ttf');
+  font-display: swap;
 }
 
 ::selection {

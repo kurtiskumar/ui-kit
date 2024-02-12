@@ -1,0 +1,78 @@
+
+<!--
+  https://raw.githubusercontent.com/kurtiskumar/ui-kit/main/index.css?token=GHSAT0AAAAAACNNEGJEJ3PO54E2MRFAQC5CZOJJ4WQ
+-->
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .article {
+      width: 100%;
+    }
+
+    #textTextarea {
+      resize: none;
+      width: 100%;
+      height: 100%;
+
+    }
+    #errorDiv {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .textareaContainer {
+      border-radius: var(--borderRadiusM);
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .errorSpan {
+      background-color: var(--colorErrorLight);
+      padding: var(--spacingXS) var(--spacingS);
+      border-radius: var(--borderRadiusM);
+      margin-bottom: var(--spacingXS);
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="content">
+      
+      <div class="article">
+        <h1>Markov Sentence Generator</h1>
+        <p>Generate unique sentences based on your text input using Markov chains. Try pasting text from a book into the textbox and clicking "generate".</p>
+        <p>Context determines how strictly the input text is followed. Higher values are less creative but more coherent. A context of 2 or 3 usually works best, depending on input size.</p>
+        <div class="spacingVM"></div>
+        <label for="contextInput">Context</label>
+        <div class="spacingVXS"></div>
+        <input id="contextInput" type="number" min="1" max="10">
+        <div class="spacingVM"></div>
+        <hr>
+        <div class="spacingVM"></div>
+        <div id="errorDiv"></div>
+        <button id="generateBtn" class="primaryBtn">Generate</button>
+        <div class="spacingVXS"></div>
+        <div class="textareaContainer">
+          <textarea id="textTextarea"></textarea>
+        </div>
+        <div class="spacingVM"></div>
+        <div class="spacingVXS"></div>
+        <div id="wordOutput">
+          This is where words will be generated:
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="base.js"></script>
+</html>
