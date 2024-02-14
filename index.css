@@ -23,6 +23,7 @@
   --spacingM: 24pt;
   --spacingS: 12pt;
   --spacingXS: 6pt;
+  --spacingXXS: 3pt;
 
   --colorHue: 250;
   --colorPrimary: hsl(var(--colorHue), 58.3%, 52%);
