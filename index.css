@@ -524,3 +524,16 @@ textarea {
   vertical-align: middle;
   text-transform: none;
 }
+
+
+blockquote {
+  margin-top: var(--spacingS);
+  background-color: var(--colorWhite);
+  padding: var(--spacingS);
+  border-radius: var(--borderRadiusS);
+  border: var(--borderSize) solid var(--colorLight);
+}
+
+blockquote p {
+  margin-top: 0px;
+}
