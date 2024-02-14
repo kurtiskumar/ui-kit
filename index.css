@@ -8,6 +8,7 @@
   transition: 0.25s cubic-bezier(0.2, 0.6, 0.07, 1);
   */
   transition: background-color var(--transition), color var(--transition);
+  /*
   color: var(--colorDarkest);
   /*
   font-size: var(--fontSizeBody);
@@ -204,12 +205,15 @@ p {
   */
 }
 
+/*
 span {
+  
   font-size: var(--fontSizeBody);
   font-weight: var(--weightNormal);
   line-height: 1.5;
 
 }
+*/
 
 .card {
   overflow: hidden;
