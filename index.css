@@ -233,7 +233,7 @@ span {
 #container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   min-height: 100%;
@@ -339,7 +339,7 @@ img {
   left: 0;
   top: 0;
   overflow: auto;
-  padding-top: 60px;
+  padding: var(--spacingL);
   
   background-color: hsla(var(--colorHue), 0%, 50%, 0.5);
 }
@@ -347,14 +347,24 @@ img {
 .modalContent {
   margin: auto;
   background-color: var(--colorLightest);
-  padding: var(--spacingL);
+  overflow: hidden;
+  /*
   width: 80%; 
-  height: auto;
-  overflow-y: auto;
+  height: 75%;
   max-width: 600px; 
   max-height: 80%;
+  */
+  width: 100%;
+  height: 100%;
   border-radius: var(--borderRadiusM);
   box-shadow: var(--shadowL);
+}
+
+.modalActualContent {
+  padding: var(--spacingM);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
 }
 
 
