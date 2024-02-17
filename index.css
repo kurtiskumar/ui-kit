@@ -108,7 +108,7 @@ button {
 }
 
 .horzBtn:hover {
-  background-color: var(--colorLightest);
+  background-color: var(--colorLight);
   color: var(--colorDarkest);
 }
 
