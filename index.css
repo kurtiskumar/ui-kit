@@ -322,7 +322,7 @@ img {
 ::-webkit-scrollbar-thumb {
   background-color: var(--colorMedium);
   border-radius: 0;
-  min-height: var(--spacingM)
+  min-height: 10%;
 }
 
 ::-webkit-scrollbar-thumb:hover {
